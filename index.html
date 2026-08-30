@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>サブコンシャス・セッション｜mariyael</title>
+<meta property="og:title" content="サブコンシャス・セッション｜mariyael">
+<meta property="og:description" content="タロットを媒介に、あなた自身も気づいていない潜在意識の声へとアクセスします。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ygmy1031sk0909-ux.github.io/session/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="サブコンシャス・セッション｜mariyael">
+<meta name="twitter:description" content="タロットを媒介に、あなた自身も気づいていない潜在意識の声へとアクセスします。">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+body {
+background: #F7F3EE;
+color: #2A1F2D;
+font-family: ‘Noto Serif JP’, serif;
+font-weight: 300;
+font-size: 16px;
+line-height: 1.95;
+overflow-x: hidden;
+}
+
+/* ── HERO ── */
+.hero {
+background: #1C1230;
+color: #F7F3EE;
+min-height: 100svh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 4rem 2rem 3rem;
+position: relative;
+overflow: hidden;
+}
+.hero::before {
+content: ‘’;
+position: absolute;
+inset: 0;
+background: radial-gradient(ellipse at 50% 40%, rgba(180,140,220,0.12) 0%, transparent 70%);
+pointer-events: none;
+}
+
+.hero-eyebrow {
+font-family: ‘Cormorant Garamond’, serif;
+font-style: italic;
+font-size: 1rem;
+letter-spacing: 0.3em;
+color: #D4AF5A;
+margin-bottom: 2rem;
+}
+
+.moon-ring {
+width: clamp(160px, 36vw, 220px);
+height: clamp(160px, 36vw, 220px);
+border-radius: 50%;
+border: 1px solid rgba(212,175,90,0.6);
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto 2.5rem;
+position: relative;
+animation: pulse-ring 6s ease-in-out infinite;
+}
+.moon-ring::before {
+content: ‘’;
+position: absolute;
+inset: 12px;
+border-radius: 50%;
+border: 1px solid rgba(200,180,240,0.3);
+}
+.moon-inner {
+width: 68%; height: 68%;
+border-radius: 50%;
+background: radial-gradient(ellipse at 38% 35%, #3a2855 0%, #1a0f30 60%, #0a0716 100%);
+display: flex; align-items: center; justify-content: center;
+font-family: ‘Cormorant Garamond’, serif;
+font-size: clamp(2rem, 6vw, 3rem);
+color: #D4AF5A;
+}
+@keyframes pulse-ring {
+0%,100% { box-shadow: 0 0 0 0 rgba(212,175,90,0); }
+50% { box-shadow: 0 0 30px 6px rgba(212,175,90,0.18); }
+}
+
+.hero h1 {
+font-weight: 300;
+font-size: clamp(1.4rem, 4vw, 2.6rem);
+letter-spacing: 0.18em;
+line-height: 1.6;
+color: #FFFFFF;
+margin-bottom: 1rem;
+}
+.hero h1 em {
+display: block;
+font-family: ‘Cormorant Garamond’, serif;
+font-style: italic;
+font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+color: #C8B0E8;
+letter-spacing: 0.25em;
+margin-top: 0.6rem;
+font-weight: 400;
+}
+.hero-desc {
+max-width: 480px;
+font-size: 1rem;
+color: #D8D0EA;
+margin: 1.5rem auto 2.5rem;
+letter-spacing: 0.05em;
+}
+.cta-btn {
+display: inline-block;
+padding: 0.9rem 3rem;
+border: 1px solid #D4AF5A;
+color: #D4AF5A;
+text-decoration: none;
+letter-spacing: 0.2em;
+font-size: 0.95rem;
+font-weight: 400;
+transition: background 0.3s;
+background: transparent;
+}
+.cta-btn:hover { background: rgba(212,175,90,0.15); }
+.cta-btn.dark {
+border-color: #8B5E3C;
+color: #8B5E3C;
+}
+.cta-btn.dark:hover { background: rgba(139,94,60,0.1); }
+
+.scroll-hint {
+margin-top: 2.5rem;
+font-size: 0.75rem;
+letter-spacing: 0.3em;
+color: #8A7A9A;
+animation: fade-bob 3s ease-in-out infinite;
+}
+@keyframes fade-bob {
+0%,100% { opacity: 0.5; transform: translateY(0); }
+50% { opacity: 1; transform: translateY(5px); }
+}
+
+/* ── DIVIDERS ── */
+.divider {
+text-align: center;
+font-size: 1rem;
+letter-spacing: 0.4em;
+color: #9A7A4A;
+padding: 2rem 0;
+background: #F7F3EE;
+}
+.divider-dark {
+text-align: center;
+font-size: 1rem;
+letter-spacing: 0.4em;
+color: #6A5A7A;
+padding: 2rem 0;
+background: #1C1230;
+}
+
+/* ── LIGHT SECTIONS ── */
+.light-section {
+background: #F7F3EE;
+padding: 5rem 2rem;
+}
+.light-section .inner {
+max-width: 660px;
+margin: 0 auto;
+}
+
+.section-label {
+font-family: ‘Cormorant Garamond’, serif;
+font-style: italic;
+font-size: 0.85rem;
+letter-spacing: 0.4em;
+color: #9A7A4A;
+display: block;
+margin-bottom: 1rem;
+text-transform: uppercase;
+}
+
+h2 {
+font-weight: 300;
+font-size: clamp(1.3rem, 3.5vw, 1.9rem);
+letter-spacing: 0.1em;
+line-height: 1.7;
+margin-bottom: 1.8rem;
+color: #1C1230;
+}
+
+p {
+font-size: 1rem;
+color: #3A2F3E;
+margin-bottom: 1.2em;
+letter-spacing: 0.04em;
+}
+
+.voice-block {
+border-left: none;
+border-top: 1px solid #C8A0D8;
+border-bottom: 1px solid #C8A0D8;
+padding: 1.8rem 2rem;
+margin: 2.2rem 0;
+background: #EFE8F8;
+text-align: center;
+}
+.voice-block p {
+font-style: italic;
+color: #5A3A7A;
+font-size: 0.88rem;
+line-height: 2.4;
+margin: 0;
+display: inline-block;
+text-align: left;
+}
+
+/* ── DARK SECTIONS ── */
+.dark-section {
+background: #1C1230;
+padding: 5rem 2rem;
+text-align: center;
+}
+.dark-section .inner {
+max-width: 600px;
+margin: 0 auto;
+}
+.dark-section .section-label {
+color: #D4AF5A;
+}
+.dark-section h2 {
+color: #FFFFFF;
+margin-bottom: 1.5rem;
+}
+.dark-section p {
+color: #C8C0DC;
+}
+
+.dragon-glyph {
+font-size: 3.2rem;
+display: block;
+margin-bottom: 1rem;
+animation: glow-pulse 4s ease-in-out infinite;
+}
+@keyframes glow-pulse {
+0%,100% { filter: drop-shadow(0 0 10px rgba(212,175,90,0.4)); }
+50% { filter: drop-shadow(0 0 28px rgba(212,175,90,0.9)); }
+}
+
+/* ── LIST ── */
+.voice-list { list-style: none; margin: 1.5rem 0; }
+.voice-list li {
+padding: 1rem 0 1rem 2rem;
+border-bottom: 1px solid #D8CFC8;
+font-size: 1rem;
+color: #3A2F3E;
+position: relative;
+}
+.voice-list li::before {
+content: ‘✦’;
+position: absolute;
+left: 0;
+color: #9A7A4A;
+font-size: 0.7rem;
+top: 1.3rem;
+}
+
+/* ── DETAIL GRID ── */
+.detail-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1.2rem;
+margin-top: 2rem;
+}
+@media (max-width: 480px) { .detail-grid { grid-template-columns: 1fr; } }
+.detail-card {
+background: #FFFFFF;
+border: 1px solid #D8CFC8;
+padding: 1.5rem 1.2rem;
+text-align: center;
+}
+.detail-card .dlabel {
+display: block;
+font-size: 0.78rem;
+letter-spacing: 0.3em;
+color: #9A7A4A;
+margin-bottom: 0.5rem;
+font-family: ‘Cormorant Garamond’, serif;
+font-style: italic;
+}
+.detail-card .dvalue {
+font-size: 1rem;
+color: #2A1F2D;
+letter-spacing: 0.04em;
+line-height: 1.7;
+}
+
+/* ── PROFILE ── */
+.profile-wrap {
+display: flex;
+gap: 1.5rem;
+align-items: flex-start;
+margin-top: 2.5rem;
+padding: 1.8rem;
+background: #FFFFFF;
+border: 1px solid #D8CFC8;
+}
+.profile-icon {
+width: 68px; height: 68px; min-width: 68px;
+border-radius: 50%;
+background: linear-gradient(135deg, #3a2855, #1a0f30);
+border: 1px solid rgba(212,175,90,0.5);
+display: flex; align-items: center; justify-content: center;
+font-size: 1.6rem;
+flex-shrink: 0;
+}
+.profile-name {
+color: #1C1230;
+font-size: 1.05rem;
+font-weight: 400;
+letter-spacing: 0.1em;
+margin-bottom: 0.3em;
+display: block;
+}
+.profile-role {
+color: #5A5070;
+font-size: 0.9rem;
+letter-spacing: 0.04em;
+line-height: 1.9;
+}
+
+/* ── CTA ── */
+.cta-section {
+background: #EFE8F8;
+padding: 6rem 2rem 7rem;
+text-align: center;
+}
+.cta-section .inner { max-width: 500px; margin: 0 auto; }
+.cta-section h2 { color: #1C1230; margin-bottom: 1rem; }
+.cta-section p { color: #3A2F3E; margin-bottom: 2.5rem; }
+.cta-note {
+display: block;
+margin-top: 1.5rem;
+font-size: 0.85rem;
+letter-spacing: 0.1em;
+color: #7A6A8A;
+}
+
+footer {
+background: #1C1230;
+text-align: center;
+padding: 2.5rem 1.5rem;
+font-size: 0.8rem;
+letter-spacing: 0.2em;
+color: #7A6A8A;
+}
+
+/* ── REVEAL ── */
+.reveal {
+opacity: 0;
+transform: translateY(18px);
+transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+</style>
+
+</head>
+<body>
+
+<!-- HERO (dark) -->
+
+<div class="hero reveal">
+  <p class="hero-eyebrow">Subconscious Channeling &times; Tarot</p>
+  <div class="moon-ring">
+    <div class="moon-inner">&#x263D;</div>
+  </div>
+  <h1>
+    あなたの奥に眠る声を<br>聴く。
+    <em>Subconscious Channeling Session<br>サブコンシャス・セッション</em>
+  </h1>
+  <p class="hero-desc">タロットを媒介に、あなた自身も気づいていない潜在意識の声へとアクセスします。</p>
+
+  <p class="scroll-hint">&#x2726; scroll &#x2726;</p>
+</div>
+
+<!-- INTRO (light) -->
+
+<div class="light-section reveal">
+  <div class="inner">
+    <span class="section-label">Session</span>
+    <h2>言葉にならない「何か」に、<br>名前をつける時間</h2>
+    <p>なぜか前に進めない。同じパターンを繰り返してしまう。本当に望んでいることがわからない。</p>
+    <p>そんな感覚の多くは、意識の表層ではなく、ずっと深いところ──潜在意識に根を持っています。タロットはその扉を開く鍵。カードが映し出すのは、あなたの魂がすでに知っていることです。</p>
+    <div class="voice-block">
+      <p>「答えはいつも、あなたの中にある。<br>私は、ただその声に寄り添う通訳です。」</p>
+    </div>
+  </div>
+</div>
+
+<!-- DRAGON (dark) -->
+
+<div class="dark-section reveal">
+  <div class="inner">
+    <span class="dragon-glyph">&#x131EC;</span>
+    <span class="section-label">白龍セタとともに</span>
+    <h2 style="font-size:clamp(1rem, 2.5vw, 1.3rem);">プレアデスの時代から共に在る<br><br>白龍セタと、ふたりで臨みます</h2>
+    <p>施術には、宇宙の始まりから共に歩んできた白龍セタの高次のエネルギーが加わります。チャネリングの精度と深みは、この共鳴によって支えられています。</p>
+  </div>
+</div>
+
+<!-- ABOUT (light) -->
+
+<div class="light-section reveal">
+  <div class="inner">
+    <span class="section-label">About mariyael</span>
+    <h2>この感覚、ずっと誰にも話せなかった。</h2>
+    <p>神仏を崇拝する家に生まれ、幼い頃から神社仏閣への参拝が日常でした。四国88ヶ所参りを重ね、高野山へも何度も足を運び、安楽寺にて得度を受けました。空海との約束を思い出し、四国の土地を守る一助をさせていただいています。</p>
+    <p>小さな頃から、相手の潜在意識が見える──その能力は、長い間、私にとって深い生きづらさの源でもありました。</p>
+    <p>転機は、伊勢神宮で降りてきた言葉。</p>
+    <div class="voice-block">
+      <p>「その能力を使って、沢山の人々を肉体も合わせて救い導いていきなさい。」</p>
+    </div>
+    <p>それ以来、鍼灸師・周波数調整士として、そしてレムリアとプレアデスの時代から携わってきたヒーラーの記憶とともに、魂と肉体の両面から人々に寄り添っています。</p>
+    <p>幼少期から、未来がこうなるだろうという感覚がそのまま現実になる経験を何度も重ねてきました。また、見えない存在に幾度となく守られ、導かれてきました。</p>
+    <p>大人になるにつれ、その能力を封印してきましたが、ギリシャとエジプトへのリトリートで転機が訪れます。封印されていた能力が少しずつ目を覚め、ピラミッドでの瞑想においてついに解放されました。</p>
+    <p>エメラルドタブレットとの共鳴が深まるとともに、トート神との約束を、あの場所で思い出しました。</p>
+    <p>エジプトの叡智とエネルギーを受け取りながら、真我で生きると決めた魂のサポートをしていく。すべては、この使命へと繋がっていました。</p>
+    <div class="profile-wrap">
+      <div class="profile-icon">&#x2726;</div>
+      <div>
+        <span class="profile-name">mariyael</span>
+        <span class="profile-role">
+          鍼灸師 ／ タロットチャネラー ／ 周波数調整士<br>
+          四国在住
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOR WHOM (light) -->
+
+<div class="light-section reveal" style="background:#FFFFFF; padding-top:0;">
+  <div class="inner">
+    <span class="section-label">For you if&hellip;</span>
+    <h2>こんな方に届けたい</h2>
+    <ul class="voice-list">
+      <li>なぜか同じことを繰り返してしまうと感じている</li>
+      <li>自分の本当の気持ちがわからず、迷い続けている</li>
+      <li>人間関係のパターンを変えたいのに変えられない</li>
+      <li>魂レベルのメッセージを受け取りたい</li>
+      <li>心と体の両方から根本を整えたい</li>
+
+```
+</ul>
+```
+
+  </div>
+</div>
+
+<!-- SESSION DETAIL (light) -->
+
+<div class="light-section reveal">
+  <div class="inner">
+    <span class="section-label">Session Detail</span>
+    <h2>セッションについて</h2>
+    <p>タロットを媒介としたチャネリングにより潜在意識にアクセスし、あなたの今の状態・ブロック・本来の流れを読み解きます。</p>
+    <p>タロットが映し出すのは、あなたの魂がすでに知っていること。繰り返してきたパターンの根っこが見え、長い間、自分でも気づかなかった思い込みやブロックが、言葉になって現れてきます。</p>
+    <p>一方的な「占い」ではなく、対話を通じて深層のメッセージを受け取り、「そうだったのか」という深い腑落ちと、次の一歩への静かな確信が生まれる時間です。</p>
+    <p>必要に応じて、ヒーリングが入ることもあります。</p>
+    <div class="detail-grid">
+      <div class="detail-card">
+        <span class="dlabel">Format</span>
+        <span class="dvalue">Zoom</span>
+      </div>
+      <div class="detail-card">
+        <span class="dlabel">Duration</span>
+        <span class="dvalue">60〜90分</span>
+      </div>
+      <div class="detail-card">
+        <span class="dlabel">Fee</span>
+        <span class="dvalue">¥11,111</span>
+      </div>
+      <div class="detail-card">
+        <span class="dlabel">Time</span>
+        <span class="dvalue">10:00 / 14:00〜<br><small style="font-size:0.85em; color:#7A6A8A;">夜は要相談</small></span>
+      </div>
+    </div>
+    <p style="margin-top:2rem; font-size:0.9rem; color:#5A5070; letter-spacing:0.04em;">
+      お支払いは銀行振込にて承ります。<br>
+      お申し込み後、3日以内にお振り込みをお願いいたします。<br>
+      ただし、セッションのご予約日が3日以内の場合は、セッション前日の18:00までにお振り込みください。<br>
+      お振り込みの確認をもって、お申し込み完了となります。<br>
+      お支払い期限までにお振り込みが確認できない場合は、お申し込みを自動キャンセルとさせていただきます。
+    </p>
+
+```
+</p>
+```
+
+  </div>
+</div>
+
+<!-- CLOSING MESSAGE (dark) -->
+
+<div class="dark-section reveal">
+  <div class="inner">
+    <p style="font-size:1.1rem; line-height:2.2; color:#E0D8F0;">
+      変わりたいと思ったその気持ちが、<br>
+      すでに答えです。
+    </p>
+    <p style="margin-top:1.5rem; font-size:0.95rem; color:#A898C8;">
+    <p style="font-size:1.1rem; line-height:2.2; color:#E0D8F0;">あなたがここにいることは<br>偶然ではありません。</p>
+    <p style="margin-top:1.5rem; font-size:0.95rem; color:#A898C8;">魂は、もうすでに動き始めています。</p>
+    </p>
+  </div>
+</div>
+
+<!-- CTA -->
+
+<div class="cta-section reveal" id="apply">
+  <div class="inner">
+    <h2>内なる声は、<br>ずっと待っていた。</h2>
+    <p style="margin-bottom:1.5rem;">公式LINEにご登録のうえ、<br>お名前と「セッション希望」と<br>メッセージをお送りください。</p>
+    <a href="https://lin.ee/9vxGYVZ" target="_blank" class="cta-btn dark">公式LINEはこちら →</a>
+  </div>
+</div>
+
+<!-- RESTRICTIONS -->
+
+<div class="light-section reveal" style="background:#FFF8F8;">
+  <div class="inner">
+    <span class="section-label">Important</span>
+    <h2 style="font-size:1.1rem;">お受けできないご相談について</h2>
+    <p style="font-size:0.82rem; color:#5A3A3A;">倫理・法令遵守および占術の性質上、以下の内容に関するご相談はお受けできません。あらかじめご了承ください。</p>
+    <ul class="voice-list" style="margin-top:1rem; font-size:0.82rem;">
+      <li style="border-bottom-color:#EED8D8;">人の生死・寿命・病気の診断に関する事柄<br><small style="color:#9A7A7A;">（医師法等に関わるため）</small></li>
+      <li style="border-bottom-color:#EED8D8;">ギャンブル・投資・株価の予想、および犯罪に関わる事柄</li>
+      <li style="border-bottom-color:#EED8D8;">試験の合否や裁判の勝敗などの確定的な結果</li>
+      <li style="border-bottom-color:#EED8D8;">第三者のプライバシーを不当に調べる行為</li>
+      <li style="border-bottom-color:#EED8D8;">特定の人物への呪い・不幸を望むご相談</li>
+    </ul>
+    <div class="voice-block" style="margin-top:2rem; background:#FFF0F0; border-color:#D8A0A0;">
+      <p style="color:#7A3A3A; font-size:0.82rem;">当セッションは未来を断定するものではなく、お悩みの整理や望む未来へ進むためのアドバイスをお伝えするものです。</p>
+    </div>
+  </div>
+</div>
+
+<!-- TERMS -->
+
+<div class="light-section reveal">
+  <div class="inner">
+    <span class="section-label">Notes</span>
+    <h2 style="font-size:1.1rem;">ご予約前にお読みください</h2>
+    <ul class="voice-list" style="font-size:0.82rem;">
+      <li style="padding: 0.7rem 0 0.7rem 2rem;">
+        <strong style="color:#1C1230; font-weight:400;">変更・キャンセルについて</strong><br>
+        ご予約の変更は、セッション前日20:00までにご連絡ください。当日の無断キャンセルはキャンセル料として全額（100%）をご請求いたします。
+      </li>
+      <li style="padding: 0.7rem 0 0.7rem 2rem;">
+        <strong style="color:#1C1230; font-weight:400;">返金について</strong><br>
+        お振り込み後のお客様都合によるキャンセルの場合、返金はいかなる場合もお受けできません。あらかじめご了承ください。
+      </li>
+      <li style="padding: 0.7rem 0 0.7rem 2rem;">
+        <strong style="color:#1C1230; font-weight:400;">未成年の方へ</strong><br>
+        18歳未満の方がご受講される場合は、保護者の方の同意が必要です。
+      </li>
+      <li style="padding: 0.7rem 0 0.7rem 2rem;">
+        <strong style="color:#1C1230; font-weight:400;">ヒーリングについて</strong><br>
+        セッション中、必要に応じてヒーリングを行う場合がございます。本セッションは医療行為ではなく、疾病の診断・治療・予防を目的とするものではありません。
+      </li>
+      <li style="padding: 0.7rem 0 0.7rem 2rem;">
+        <strong style="color:#1C1230; font-weight:400;">守秘義務について</strong><br>
+        セッション内容はプライバシーとして厳守いたします。ご安心してお話しください。
+      </li>
+      <li style="padding: 0.7rem 0 0.7rem 2rem;">
+        <strong style="color:#1C1230; font-weight:400;">医療機関に通院中の方へ</strong><br>
+        現在、心身の状態について医療機関で継続的な治療・通院をされている方は、セッションが心身のご負担になる場合がございますので、まずは主治医の先生によるサポートを優先していただき、本セッションのお申し込みはお控えいただいております。
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="cta-section reveal" style="background:#F0EBF8; padding: 4rem 2rem;">
+  <div class="inner">
+    <p style="font-size:1rem; line-height:2; color:#3A2F3E; margin-bottom:1.5em;">うまく言葉にできなくても、大丈夫です。</p>
+    <p style="font-size:1rem; line-height:2; color:#3A2F3E; margin-bottom:1.5em;">ひとりで抱えてきた想いを<br>一緒に解いていきましょう。</p>
+    <p style="font-size:1rem; line-height:2; color:#3A2F3E; margin-bottom:0;">お会いできる日を<br>心より楽しみにしています。</p>
+  </div>
+</div>
+
+© mariyael — Subconscious Channeling Session  |  四国
+
+</footer>
+
+<script>
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
